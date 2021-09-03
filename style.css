@@ -28,7 +28,7 @@ html {
 }
 
 #product-shape {
-  fill: #DBED64;
+  fill: #a1a1a1;
 }
 
 #background-image {
@@ -49,11 +49,11 @@ html {
 }
 
 .color {
-  height: 25px;
+  height: 30px;
   width: 45px;
   margin-left: 0.5em;
   border-radius: 18px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-  border: 2px solid #aaa;
+  border: 1px solid #ffffff;
   cursor: pointer;
 }
