@@ -8,8 +8,9 @@ h1 {
 }
 
 h2 {
-	font-size: 0.9em;
-	text-transform: uppercase;
+	font-size: 0.8em;
+	text-transform: Titlecase;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 	color: #333;
 }
 
@@ -71,6 +72,11 @@ html {
   fill: #a1a1a1;
 }
 
+#product-shape2 {
+  fill: #a1a1a1;
+}
+
+
 #background-image {
   position: absolute;
   top: 0;
@@ -80,10 +86,108 @@ html {
   z-index: 1;
 }
 
-.colors {
+.colorsr1 {
   display: flex;
   position: fixed;
   bottom: 1em;
+  right: 1em;
+  z-index: 3;
+}
+
+.colorsr2 {
+  display: flex;
+  position: fixed;
+  bottom: 3.3em;
+  right: 1em;
+  z-index: 3;
+}
+
+.colorsr3 {
+  display: flex;
+  position: fixed;
+  bottom: 5.6em;
+  right: 1em;
+  z-index: 3;
+}
+
+.colorsr4 {
+  display: flex;
+  position: fixed;
+  bottom: 7.95em;
+  right: 1em;
+  z-index: 3;
+}
+
+.colorsr5 {
+  display: flex;
+  position: fixed;
+  bottom: 10.25em;
+  right: 1em;
+  z-index: 3;
+}
+
+.colorsr6 {
+  display: flex;
+  position: fixed;
+  bottom: 12.55em;
+  right: 1em;
+  z-index: 3;
+}
+
+.colorsl1 {
+  display: flex;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  z-index: 3;
+}
+
+.colorsl2 {
+  display: flex;
+  position: fixed;
+  bottom: 3.3em;
+  left: 1em;
+  z-index: 3;
+}
+
+.colorsl3 {
+  display: flex;
+  position: fixed;
+  bottom: 5.6em;
+  left: 1em;
+  z-index: 3;
+}
+
+.colorsl4 {
+  display: flex;
+  position: fixed;
+  bottom: 7.95em;
+  left: 1em;
+  z-index: 3;
+}
+
+.colorsl5 {
+  display: flex;
+  position: fixed;
+  bottom: 10.25em;
+  left: 1em;
+  z-index: 3;
+}
+
+.colorsl6 {
+  display: flex;
+  position: fixed;
+  bottom: 12.55em;
+  left: 1em;
+  z-index: 3;
+}
+
+
+.fullscreen {
+  height: 20px;
+  display: flex;
+  position: fixed;
+  top: 1em;
   right: 1em;
   z-index: 3;
 }
@@ -97,15 +201,25 @@ html {
   border: 1px solid #ffffff;
   cursor: pointer;
 }
+
+.color2 {
+  height: 32px;
+  width: 32px;
+  margin-left: 0.5em;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
  
 button {
   display: inline-block;
   border-radius: 3px;
   border: none;
-  font-size: 0.6rem;
-  padding: 0rem 0.7em;
-  background: #69c773;
-  border-bottom: 1px solid #498b50;
+  font-size: 0.8rem;
+  padding: 0rem 0.9em;
+  background: #476089;
+  border-bottom: 1px solid #000000;
   color: white;
   -webkit-font-smoothing: antialiased;
   font-weight: normal;
@@ -114,7 +228,7 @@ button {
 }
 
 button:hover, button:focus {
-  opacity: 0.75;
+  opacity: 0.5;
   cursor: pointer;
 }
 

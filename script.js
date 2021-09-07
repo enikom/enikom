@@ -1,5 +1,6 @@
 // Reference the color shape that was drawn over the image
 const overlay = document.getElementById("product-shape");
+const overlay2 = document.getElementById("product-shape2");
 
 // Click on a color
 
@@ -8,12 +9,26 @@ for (var i = 0; i < el.length; i++) {
   el[i].onclick = changeColor;
 }
 
+var el = document.getElementsByClassName("color2");
+for (var i = 0; i < el.length; i++) {
+  el[i].onclick = changeColor2;
+}
+
 function changeColor(e) {
   // get the hex color
   let hex = e.target.getAttribute("data-hex");
   // set the hex color
   overlay.style.fill = hex;
 }
+
+function changeColor2(e) {
+  // get the hex color
+  let hex = e.target.getAttribute("data-hex");
+  // set the hex color
+  overlay2.style.fill = hex;
+}
+
+// Fullscreen Document
 
 var requestFullscreen = function (ele) {
 	if (ele.requestFullscreen) {
@@ -44,8 +59,6 @@ var exitFullscreen = function () {
 };
 
 
-
-
 var fsDocButton = document.getElementById('fs-doc-button');
 var fsExitDocButton = document.getElementById('fs-exit-doc-button');
 
@@ -57,25 +70,4 @@ fsDocButton.addEventListener('click', function(e) {
 fsExitDocButton.addEventListener('click', function(e) {
 	e.preventDefault();
 	exitFullscreen();
-});
-
-
-
-
-var fsVidButton = document.getElementById('fs-vid-button');
-var video = document.getElementById('video');
-
-fsVidButton.addEventListener('click', function(e) {
-	e.preventDefault();
-	requestFullscreen(video);
-});
-
-
-
-var fsImgButton = document.getElementById('fs-img-button');
-var image = document.getElementById('image');
-
-fsImgButton.addEventListener('click', function(e) {
-	e.preventDefault();
-	requestFullscreen(image);
 });
