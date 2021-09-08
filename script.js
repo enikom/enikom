@@ -62,15 +62,11 @@ var fsDocButton = document.getElementById('fs-doc-button');
 var fsExitDocButton = document.getElementById('fs-exit-doc-button');
 
 
-document.getElementById('fs-doc-button').addEventListener("click", function() {
-document.documentElement.requestFullScreen();
-screen.orientation.lock("portrait-primary");
-}, false);
-
 fsDocButton.addEventListener('click', function(e) {
 	e.preventDefault();
 	requestFullscreen(document.documentElement);
-});
+	screen.orientation.lock("portrait-primary");
+}, false);
 
 fsExitDocButton.addEventListener('click', function(e) {
 	e.preventDefault();
