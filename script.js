@@ -28,7 +28,7 @@ function changeColor2(e) {
   overlay2.style.fill = hex;
 }
 
-// Fullscreen Document
+// Fullscreen Document (Apple iOS not supported)
 
 var requestFullscreen = function (ele) {
 	if (ele.requestFullscreen) {
@@ -70,7 +70,8 @@ screen.orientation.lock("portrait-primary");
 fsDocButton.addEventListener('click', function(e) {
 	e.preventDefault();
 	requestFullscreen(document.documentElement);
-	screen.orientation.lock('landscape');
+// Rotate and lock to Landscape 90°CW only in Fullscreen mode
+	screen.orientation.lock('landscape-secondary');
 });
 
 fsExitDocButton.addEventListener('click', function(e) {
