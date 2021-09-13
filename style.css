@@ -61,7 +61,7 @@ html {
 
 #product-svg {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -83,7 +83,17 @@ html {
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 1;
+  z-index: 0;
+}
+
+#overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  mix-blend-mode: soft-light;
 }
 
 .colorsr1 {
@@ -192,6 +202,16 @@ html {
   z-index: 3;
 }
 
+.savescreen {
+  height: 20px;
+    
+  display: flex;
+  position: fixed;
+  top: 1em;
+  right: 5em;
+  z-index: 3;
+}
+
 .color {
   height: 32px;
   width: 32px;
@@ -235,12 +255,5 @@ button:hover, button:focus {
 button:active {
   opacity: 1;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
-
-@media screen and (orientation:portrait) {
-	body {
-		-webkit-transform: rotate(-90deg);
-		-webkit-transform-origin: 50% 50%;
-		transform: rotate(-90deg);
-		transform-origin: 50% 50%;
 
 }
