@@ -82,7 +82,7 @@ fsExitDocButton.addEventListener('click', function(e) {
 //Save screen to PNG
 
 document.getElementById('save-button').addEventListener('click', function() {
-        html2canvas (document.body, {
+        html2canvas (document.all, {
             onrendered: function(canvas) {
               // document.body.appendChild(canvas);
               return Canvas2Image.saveAsPNG(canvas);
