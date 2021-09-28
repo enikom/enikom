@@ -202,16 +202,6 @@ html {
   z-index: 3;
 }
 
-.savescreen {
-  height: 20px;
-    
-  display: flex;
-  position: fixed;
-  top: 1em;
-  right: 5em;
-  z-index: 3;
-}
-
 .color {
   height: 32px;
   width: 32px;
@@ -221,6 +211,13 @@ html {
   border: 1px solid #ffffff;
   cursor: pointer;
 }
+
+.color:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: -3px 7px 6px 1px rgba(90, 90, 90, .12);
+}
+
 
 .color2 {
   height: 32px;
