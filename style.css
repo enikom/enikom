@@ -76,8 +76,7 @@ html {
   fill: #a1a1a1;
 }
 
-
-#background-image {
+#background {
   position: absolute;
   top: 0;
   left: 0;
@@ -202,6 +201,19 @@ html {
   z-index: 3;
 }
 
+.butonfon {
+  height: 20px;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+}
+
+.butonfon:hover {
+}
+butonfon:active {
+}
+
 .color {
   height: 32px;
   width: 32px;
@@ -231,7 +243,7 @@ html {
  
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 5px;
   border: none;
   font-size: 0.8rem;
   padding: 0rem 0.9em;
