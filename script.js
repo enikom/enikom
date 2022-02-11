@@ -28,6 +28,15 @@ function changeColor2(e) {
   overlay2.style.fill = hex;
 }
 
+function left() {
+    document.getElementById("container").style.transform = "none";
+}
+
+function right() {
+    document.getElementById("container").style.transform = "scaleX(-1)";
+}
+
+
 // Fullscreen Document (Apple iOS not supported)
 
 var requestFullscreen = function (ele) {

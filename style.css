@@ -201,8 +201,18 @@ html {
   z-index: 3;
 }
 
+.butonflip {
+  height: 20px;
+  display: flex;
+  position: fixed;
+  top: 1em;
+  left: 8em;
+  z-index: 3;
+}
+
 .butonfon {
   height: 20px;
+  display: flex;
   position: fixed;
   top: 1em;
   left: 1em;
