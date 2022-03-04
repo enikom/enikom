@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Enikom Avanti</title>
-  <link rel="stylesheet" href="./style.css">
+<script src="script.js"></script>
 <script>
          function bez(){
              document.getElementById('background')
@@ -15,24 +15,10 @@
              .src="https://enikom.github.io/enikom/Avanti-white.jpg";
          }
       </script>
-	  <script type="text/javascript"> 
-    $('#zaladuj').click(function () { 
-        $.ajax({
-            context: this,
-            dataType : "html",
-            url : "Colors_MebelVi.html",
-            success : function(results) {
-                $(this).html(results);
-            }
-        });
-    }); 
-</script> 
+<link rel="stylesheet" href="https://enikom.github.io/enikom/style.css">
 </head>
 
 <body>
-
-
-
   <div id="container">
   <svg id="product-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1200">
   <defs/>
@@ -93,8 +79,10 @@
 <img id="overlay-image" src="https://enikom.github.io/enikom/Avanti-light.jpg" alt="">
 </div>
   
-<div id="zaladuj"> 
-</div> 
+
+<div w3-include-html="https://enikom.github.io/enikom/Colors_MebelVi.html"></div> 
+
+
 
 
 <div class="fullscreen">
@@ -114,8 +102,13 @@
     <button style="font-size:16px" title="Дясна посока" onclick=right();> <i class="fa fa-arrow-right"></i> </button>
 </div>
 
-  <script src="./script.js"></script>
+  
   <script src="https://kit.fontawesome.com/a2d7618084.js" crossorigin="anonymous"></script>
+
+
+<script>
+includeHTML();
+</script>
 
 </body>
 </html>
